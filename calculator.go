@@ -17,7 +17,7 @@ func leerOperador() string {
 	return operador
 }
 
-func leerValores() [2]int {
+func LeerValores() [2]int {
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
 	valores := scanner.Text()
