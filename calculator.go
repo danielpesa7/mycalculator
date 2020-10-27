@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-type calc struct{}
+type Calc struct{}
 
 func leerOperador() string {
 	scanner := bufio.NewScanner(os.Stdin)
@@ -49,7 +49,7 @@ func division(valor1 int, valor2 int) int {
 	return valor1 / valor2
 }
 
-func (calc) calcular(operador string, valor1 int, valor2 int) int {
+func (Calc) Calcular(operador string, valor1 int, valor2 int) int {
 	switch operador {
 	case "+":
 		resultado := suma(valor1, valor2)
